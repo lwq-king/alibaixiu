@@ -1,0 +1,180 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+} 
+header {
+    padding-left: 0!important;
+}
+.logo {
+    background-color: rgb(16, 132, 179);
+}
+.logo img {
+    display: block;
+    /* logo不需要缩放 */
+    margin: 0 auto;
+    max-width: 100%;
+}
+.logo .logo2 {
+    display: block;
+    height: 40px;
+    background-color: rgb(16, 132, 179);
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+.nav {
+    background-color: rgb(245, 243, 243);
+}
+.nav ul a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+}
+/* 当屏幕尺寸小于991px时 导航栏横向排列 浮动 让盒子宽为20% */
+@media screen and (max-width:991px) {
+    .nav ul a{
+        float: left;
+        width: 20%;  
+    }
+    article {
+        margin-top: 10px;
+    }
+}
+/* 因为屏幕尺寸过于小 导致导航栏的字体太大 看不全 当屏幕小于767px 字体大小改为14px */
+@media screen and (max-width:767px) {
+    .nav ul a li{
+        font-size: 14px;
+        padding-left: 0;
+        text-align: center; 
+    }
+    .news ul li:nth-child(1) {
+        width: 100%!important; 
+        /* 注意权重 */
+    }
+    .news ul li {
+        width: 50%!important;
+        /* 注意权重 */
+    }
+    .publish h3 {
+        font-size: 14px;
+    }
+}
+.nav ul li:hover {
+    background-color: #fff;
+    color: #333;
+}
+/* 让没对齐的字体图标对齐 */
+li span::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.nav ul li {
+    padding-left: 30px;
+    line-height: 50px;
+    font-size: 20px;
+    color: rgb(146, 144, 144);
+}
+.row {
+    padding: 0 10px;
+    
+}
+.news {
+    margin-bottom: 10px;
+}
+.news ul li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 5px;
+}
+.carousel,
+.carousel img {
+    width: 100%;
+    height: 256px!important;
+}
+
+.news ul li:nth-child(1) {
+    width: 50%;
+    height: 256px;
+}
+.news ul li img {
+    width: 100%;
+    height: 100%;
+}
+.news ul li>a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.news ul li:nth-child(1) p{
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+}
+.carousel-caption {
+    font-size: 20px!important;
+    
+}
+.news ul li a p,.carousel-caption {
+    position: absolute;
+    bottom: 0px!important;
+    left: 0px!important;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+.publish {
+    border-top: 1px solid #333;
+}
+.pic {
+    padding-top: 8px;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+.banner {
+    margin-bottom: 10px;
+} 
+aside .row a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+aside .row .banner img{
+    width: 100%;
+    height: 100%;
+}
+.hot {
+    position: relative;
+    padding: 40px 20px 40px 20px;
+    border: 1px solid rgb(201, 200, 200);
+}
+.hot p {
+    font-size: 13px;
+}
+.hot span {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    border-radius: 0;
+}
+.nav-tabs {
+    margin-top: 10px;
+}
+
